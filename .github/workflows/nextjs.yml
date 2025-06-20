@@ -72,6 +72,10 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Debug partial value
+        run: echo "ImageKit URL starts with: ${NEXT_PUBLIC_IMAGEKIT_URL:0:10}"
+      - name: Create .env file
+        run: echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}" >> .env
       - name: Check if secret is passed correctly
         run: |
           if [ -z "$NEXT_PUBLIC_IMAGEKIT_URL" ]; then
@@ -80,10 +84,8 @@ jobs:
           else
             echo "✅ NEXT_PUBLIC_IMAGEKIT_URL is set."
           fi
-        # env:
-        #   NEXT_PUBLIC_IMAGEKIT_URL: ${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}
-      - name: Create .env file
-        run: echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}" >> .env
+        env:
+          NEXT_PUBLIC_IMAGEKIT_URL: ${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
