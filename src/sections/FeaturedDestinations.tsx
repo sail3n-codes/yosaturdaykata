@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import config from "@/config";
 
 const destinations = [
   {
@@ -9,7 +10,7 @@ const destinations = [
     name: "Sailung, Dolakha",
     description:
       "Land of 100 hills, located in Dolakha is a best to visit this monsoon.",
-    image: "/images/sailung.jpg?height=400&width=600",
+    image: "sailung.jpg",
     price: "From Rs.6,000",
     rating: 4.9,
     reviews: 2847,
@@ -18,7 +19,7 @@ const destinations = [
     id: 2,
     name: "North ABC Trek",
     description: "Vibrant Lakes and Mountain Views in a 4-5 days trek.",
-    image: "/images/north-abc.jpeg?height=400&width=600",
+    image: "north-abc.jpeg",
     price: "From Rs.15,999",
     rating: 4.8,
     reviews: 1923,
@@ -28,7 +29,7 @@ const destinations = [
     name: "Ama Yangri, Sindhupalchok",
     description:
       "Mystical ancient temple on the top of a hill where nature meets spiritual energy.",
-    image: "/images/ama-yangri.jpg?height=400&width=600",
+    image: "ama-yangri.jpg",
     price: "From Rs.4500",
     rating: 4.9,
     reviews: 3156,
@@ -37,7 +38,7 @@ const destinations = [
     id: 4,
     name: "Gosainkunda Trek",
     description: "Historical temple and lake at the height of 4000m",
-    image: "/images/gosainkunda.webp?height=400&width=600",
+    image: "gosainkunda.webp",
     price: "From Rs.8000",
     rating: 4.7,
     reviews: 4231,
@@ -47,6 +48,7 @@ const destinations = [
 export default function FeaturedDestinations() {
   const [scrollY, setScrollY] = useState(0);
 
+  const { imagekitUrl } = config;
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
@@ -89,7 +91,7 @@ export default function FeaturedDestinations() {
             >
               <figure className="relative overflow-hidden">
                 <Image
-                  src={destination.image || "/placeholder.svg"}
+                  src={`${imagekitUrl}/${destination.image}`}
                   alt={destination.name}
                   width={600}
                   height={400}

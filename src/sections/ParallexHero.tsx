@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import config from "@/config";
 
 export default function ParallaxHero() {
   const [scrollY, setScrollY] = useState(0);
-
+  const { imagekitUrl } = config;
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
@@ -22,7 +23,7 @@ export default function ParallaxHero() {
         }}
       >
         <Image
-          src="/images/mountain.jpg"
+          src={`${imagekitUrl}/mountain.jpg`}
           alt="Beautiful mountain landscape"
           fill
           className="object-cover"
