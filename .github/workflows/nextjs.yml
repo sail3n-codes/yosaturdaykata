@@ -74,16 +74,6 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Create .env file
         run: echo "NEXT_PUBLIC_IMAGEKIT_URL=${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}" >> .env
-      - name: Check if secret is passed correctly
-        run: |
-          if [ -z "$NEXT_PUBLIC_IMAGEKIT_URL" ]; then
-            echo "❌ NEXT_PUBLIC_IMAGEKIT_URL is NOT set!"
-            exit 1
-          else
-            echo "✅ NEXT_PUBLIC_IMAGEKIT_URL is set."
-          fi
-        env:
-          NEXT_PUBLIC_IMAGEKIT_URL: ${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
