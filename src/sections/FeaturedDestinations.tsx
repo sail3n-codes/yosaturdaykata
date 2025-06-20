@@ -9,7 +9,7 @@ const destinations = [
     id: 1,
     name: "Sailung, Dolakha",
     description:
-      "Land of 100 hills, located in Dolakha is a best to visit this monsoon.",
+      "Land of 100 hills,located in Dolakha is a best to visit this monsoon.",
     image: "sailung.jpg",
     price: "From Rs.6,000",
     rating: 4.9,
