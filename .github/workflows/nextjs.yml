@@ -72,6 +72,16 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Check if secret is passed correctly
+        run: |
+          if [ -z "$NEXT_PUBLIC_IMAGEKIT_URL" ]; then
+            echo "❌ NEXT_PUBLIC_IMAGEKIT_URL is NOT set!"
+            exit 1
+          else
+            echo "✅ NEXT_PUBLIC_IMAGEKIT_URL is set."
+          fi
+        # env:
+        #   NEXT_PUBLIC_IMAGEKIT_URL: ${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}
       - name: Create .env file
         run: echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_IMAGEKIT_URL }}" >> .env
       - name: Build with Next.js
