@@ -12,8 +12,9 @@ export default function TravelStats() {
     <section className="py-20 bg-neutral text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Discovering Nepal, One at a time
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 hover:scale-110 transition-transform duration-300 inline-block cursor-pointer">
+            Exploring <span className="text-primary">Trails </span>, One at a
+            time
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Explore the breathtaking landscapes of Nepal with our passionate
@@ -34,7 +35,7 @@ export default function TravelStats() {
               }}
             >
               <div className="mb-4">
-                <span className="text-5xl md:text-6xl font-bold text-white group-hover:text-secondary transition-colors duration-300">
+                <span className="text-5xl md:text-6xl font-bold text-white group-hover:text-secondary group-hover:scale-120 transition-colors transition-transform duration-300 inline-block cursor-pointer">
                   {stat.number.toLocaleString()}
                   {stat.suffix}
                 </span>
