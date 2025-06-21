@@ -70,7 +70,7 @@ export default function FeaturedDestinations() {
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">
             Featured <span className="text-primary">Destinations</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

@@ -112,3 +112,12 @@ p {
   font-weight: 400;
   font-size: 14px;
 }
+
+.scale-up-animation:hover {
+  scale: 110% 110%;
+  transition-property: transform, translate, scale, rotate;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  display: inline-block;
+  cursor: pointer;
+}
