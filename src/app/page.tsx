@@ -1,3 +1,4 @@
+import AboutSection from "@/sections/AboutSection";
 import CallToActionSection from "@/sections/CallToActionSection";
 import FeaturedDestinations from "@/sections/FeaturedDestinations";
 import ParallaxHero from "@/sections/ParallexHero";
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <ParallaxHero />
       <UpcomingEvents />
+      <AboutSection />
       <FeaturedDestinations />
       <TravelStats />
       <TravelStories />
