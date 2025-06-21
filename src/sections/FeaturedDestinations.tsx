@@ -11,7 +11,7 @@ const destinations = [
     description:
       "Land of 100 hills,located in Dolakha is a best to visit this monsoon.",
     image: "sailung.jpg",
-    price: "From Rs.6,000",
+    price: "Rs.6,000",
     rating: 4.9,
     reviews: 2847,
   },
@@ -20,7 +20,7 @@ const destinations = [
     name: "North ABC Trek",
     description: "Vibrant Lakes and Mountain Views in a 4-5 days trek.",
     image: "north-abc.jpeg",
-    price: "From Rs.15,999",
+    price: "Rs.15,999",
     rating: 4.8,
     reviews: 1923,
   },
@@ -30,7 +30,7 @@ const destinations = [
     description:
       "Mystical ancient temple on the top of a hill where nature meets spiritual energy.",
     image: "ama-yangri.jpg",
-    price: "From Rs.4500",
+    price: "Rs.4,500",
     rating: 4.9,
     reviews: 3156,
   },
@@ -39,7 +39,7 @@ const destinations = [
     name: "Gosainkunda Trek",
     description: "Historical temple and lake at the height of 4000m",
     image: "gosainkunda.webp",
-    price: "From Rs.8000",
+    price: "Rs.8,000",
     rating: 4.7,
     reviews: 4231,
   },
@@ -98,7 +98,7 @@ export default function FeaturedDestinations() {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4">
-                  <div className="badge badge-primary text-white font-semibold">
+                  <div className="badge badge-primary text-black font-semibold">
                     {destination.price}
                   </div>
                 </div>
