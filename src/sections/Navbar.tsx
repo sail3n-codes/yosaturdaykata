@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="navbar bg-base-100 fixed top-0 z-50 shadow-lg">
+    <header className="navbar bg-base-100/90 fixed top-0 z-50 shadow-lg">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
