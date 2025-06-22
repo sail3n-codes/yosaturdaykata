@@ -70,16 +70,24 @@ export default function Navbar() {
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Events</a>
+            <Link href="/events" className="nav-links">
+              Events
+            </Link>
           </li>
           <li>
-            <a>Destinations</a>
+            <Link href="/destinations" className="nav-links">
+              Destinations
+            </Link>
           </li>
           <li>
-            <a>Blogs</a>
+            <Link href="/blogs" className="nav-links">
+              Blogs
+            </Link>
           </li>
           <li>
-            <a>Shop</a>
+            <Link href="/shop" className="nav-links">
+              Shop
+            </Link>
           </li>
         </ul>
       </div>

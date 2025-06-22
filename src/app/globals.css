@@ -121,3 +121,10 @@ p {
   display: inline-block;
   cursor: pointer;
 }
+
+.nav-links:hover {
+  color: var(--color-primary);
+  background-color: unset;
+  border-bottom: 2px solid var(--color-primary);
+  border-radius: unset;
+}
