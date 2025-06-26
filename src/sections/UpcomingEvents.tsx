@@ -9,7 +9,7 @@ const events = [
     name: "Phulchowki Hill: Valley's Highest Point",
     description:
       "Ascend Phulchowki, the highest hill in Kathmandu Valley, starting from Godawari. This hike takes you through dense forests, offering incredible birdwatching opportunities and panoramic views of the entire valley and distant Himalayas.",
-    image: "/static/phulchowki.jpeg?updatedAt=1750497310028",
+    image: "static/phulchowki.jpeg?updatedAt=1750497310028",
     price: "Rs. 2,500",
     date: "July 12, 2025",
     type: "Hike",
@@ -21,7 +21,7 @@ const events = [
     name: "Champadevi & Chandragiri Ridge Hike",
     description:
       "Explore the scenic ridge connecting Champadevi and Chandragiri hills, offering sweeping views of the Kathmandu Valley, surrounding mountains, and a blend of nature and spiritual sites. Option to use the Chandragiri cable car for ascent/descent.",
-    image: "/static/champadevi.webp?updatedAt=1750497310410",
+    image: "static/champadevi.webp?updatedAt=1750497310410",
     price: "Rs. 3,500",
     date: "July 20, 2025",
     type: "Hike",
@@ -33,7 +33,7 @@ const events = [
     name: "Sundarijal to Chisapani Two-Day Trek",
     description:
       "A classic short trek starting from Sundarijal, entering Shivapuri Nagarjun National Park. Experience serene forests, Tamang villages, and stunning mountain views from Chisapani, where you'll spend the night.",
-    image: "/static/sundarijal.jpg?updatedAt=1750497310350",
+    image: "static/sundarijal.jpg?updatedAt=1750497310350",
     price: "Rs. 8,500",
     date: "August 2-3, 2025",
     type: "Trek",
@@ -45,7 +45,7 @@ const events = [
     name: "Ranikot - Namobuddha - Dhulikhel Trek",
     description:
       "An enriching two-day journey through traditional Newari villages, ancient forts, and serene farmlands. Visit the sacred Namobuddha monastery and witness a beautiful sunrise from Dhulikhel, blending culture with nature.",
-    image: "/static/namobuddha.png?updatedAt=1750497310460",
+    image: "static/namobuddha.png?updatedAt=1750497310460",
     price: "Rs. 9,500",
     date: "August 16-17, 2025",
     type: "Trek",

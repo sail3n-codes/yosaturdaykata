@@ -133,4 +133,5 @@ p {
 .logo-text {
   font-family: var(--font-jolly);
   font-size: xx-large;
+  color: #ffea00;
 }
