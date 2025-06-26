@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Jolly_Lodger } from "next/font/google";
-import "./globals.css";
 import Navbar from "@/sections/Navbar";
 import Footer from "@/sections/Footer";
+import "./globals.css";
+import "swiper/css/bundle";
 
 const inter = Inter({
   subsets: ["latin"],

@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import config from "@/config";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 export default function ParallaxHero() {
   const [scrollY, setScrollY] = useState(0);
@@ -14,7 +16,7 @@ export default function ParallaxHero() {
   }, []);
 
   return (
-    <div className="relative h-screen overflow-hidden ">
+    <div className="relative h-[60vh] overflow-hidden ">
       {/* Background Image with Parallax */}
       <div
         className="absolute inset-0 parallax"
@@ -22,13 +24,28 @@ export default function ParallaxHero() {
           transform: `translateY(${scrollY * 0.5}px)`,
         }}
       >
-        <Image
-          src={`${imagekitUrl}/mountain.jpg`}
-          alt="Beautiful mountain landscape"
-          fill
-          className="object-cover"
-          priority
-        />
+        <Swiper
+          modules={[Autoplay]}
+          className="home-swiper"
+          autoplay={{ delay: 5000 }}
+          loop={true}
+          speed={1000}
+        >
+          {["mountain", "sailung"].map((img, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <Image
+                  src={`${imagekitUrl}/${img}.jpg`}
+                  alt={`image of ${img}`}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
@@ -41,7 +58,7 @@ export default function ParallaxHero() {
               Adventure
             </span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Explore breathtaking destinations, create unforgettable memories,
             and let wanderlust guide your journey to extraordinary places around
             the world.
