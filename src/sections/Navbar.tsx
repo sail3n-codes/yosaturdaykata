@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -63,8 +64,15 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Link className="" href="/">
-          Yo Saturday kata
+        <Link className="flex gap-2 items-center" href="/">
+          <Image
+            src={`/images/logo.png`}
+            alt={"logo"}
+            width={50}
+            height={20}
+            className=""
+          />
+          <div className="logo-text">YoSaturdayKata</div>
         </Link>
       </div>
       <div className="navbar-center hidden md:flex">

@@ -76,6 +76,7 @@
 
 @theme inline {
   --font-inter: var(--font-inter);
+  --font-jolly: var(--font-jolly);
 }
 
 body {
@@ -127,4 +128,9 @@ p {
   background-color: unset;
   border-bottom: 2px solid var(--color-primary);
   border-radius: unset;
+}
+
+.logo-text {
+  font-family: var(--font-jolly);
+  font-size: xx-large;
 }
