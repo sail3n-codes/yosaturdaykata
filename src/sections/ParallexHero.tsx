@@ -50,7 +50,7 @@ export default function ParallaxHero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-center h-full text-center text-white px-4">
+      <div className="relative z-10 flex items-center justify-center h-full text-center text-white px-4 bg-base-100/30">
         <div className="max-w-4xl mx-auto fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Discover Your Next
