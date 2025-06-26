@@ -8,7 +8,7 @@ const blogPosts = [
     title: "10 Waterfalls to visit this monsoon",
     excerpt:
       "Discover breathtaking destinations off the beaten path that will leave you speechless and craving for more adventures.",
-    image: "static/waterfall.jpg?updatedAt=1750487126723&height=300&width=400",
+    image: "/static/waterfall.jpg?updatedAt=1750487126723&height=300&width=400",
     author: "Aakash Silwal",
     date: "June 21, 2025",
     readTime: "8 min read",
@@ -20,7 +20,7 @@ const blogPosts = [
     excerpt:
       "Essential tips and tricks for solo travelers to make the most of their journey while staying safe and confident.",
     image:
-      "static/solo-travel.jpg?updatedAt=1750487164725&height=300&width=400",
+      "/static/solo-travel.jpg?updatedAt=1750487164725&height=300&width=400",
     author: "Chokley Kalden",
     date: "June 21, 2025",
     readTime: "12 min read",
@@ -32,7 +32,7 @@ const blogPosts = [
     excerpt:
       "Prove that incredible travel experiences don't have to break the bank with these budget-friendly destination ideas.",
     image:
-      "static/budget-travel.jpg?updatedAt=1750487169095&height=300&width=400",
+      "/static/budget-travel.jpg?updatedAt=1750487169095&height=300&width=400",
     author: "Sailendra Maharjan",
     date: "June 21, 2025",
     readTime: "6 min read",

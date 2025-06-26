@@ -64,7 +64,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Link className="flex gap-2 items-center" href="/">
+        <Link className="flex gap-3 items-center" href="/">
           <Image
             src={`/images/logo.png`}
             alt={"logo"}
