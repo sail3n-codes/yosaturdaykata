@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 export default function AboutSection() {
   return (
     <section className="py-20 bg-neutral">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">
+        <div className="flex flex-col text-center w-full justify-center items-center gap-6">
+          <Image
+            src={`/images/logo.png`}
+            alt={"logo"}
+            width={150}
+            height={150}
+          />
+          <h2 className="text-4xl md:text-5xl font-bold scale-up-animation">
             About <span className="text-primary">YoSaturdayKata</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

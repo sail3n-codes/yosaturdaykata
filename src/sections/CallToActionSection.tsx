@@ -4,7 +4,7 @@ export default function CallToActionSection() {
   return (
     <section className="py-20 bg-neutral text-white">
       <div className="max-w-4xl mx-auto text-center px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation hover:text-primary">
           Ready for Your Next Adventure?
         </h2>
         <p className="text-xl mb-8 text-blue-100">
