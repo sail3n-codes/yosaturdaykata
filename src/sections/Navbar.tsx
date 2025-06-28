@@ -105,7 +105,9 @@ export default function Navbar() {
           {theme === "light" ? "☀️" : "🌙"}
         </div> */}
         <SearchButton />
-        <a className="btn btn-primary">Book Now</a>
+        <Link href="/booking" className="btn btn-primary">
+          Book Now
+        </Link>
       </div>
     </header>
   );

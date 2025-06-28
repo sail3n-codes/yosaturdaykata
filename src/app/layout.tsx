@@ -20,7 +20,7 @@ const jolly = Jolly_Lodger({
 });
 
 export const metadata: Metadata = {
-  title: "YoSaturdayKata",
+  title: "YoSaturdayKata | Hikings and Trekkings",
   description: "It's all about hiking and building connections",
 };
 

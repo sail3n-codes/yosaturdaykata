@@ -9,7 +9,7 @@ const stats = [
 
 export default function TravelStats() {
   return (
-    <section className="py-20 bg-neutral text-white relative overflow-hidden">
+    <section className="py-20 bg-base-100 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">
