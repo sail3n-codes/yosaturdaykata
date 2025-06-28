@@ -14,7 +14,7 @@ export default function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-bold scale-up-animation">
             About <span className="text-primary">YoSaturdayKata</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto">
             We&apos;re a passionate community of hikers and trekkers, united by
             our love for Nepal&apos;s stunning landscapes and incredible trails.
             From the serene hills surrounding Kathmandu to the challenging

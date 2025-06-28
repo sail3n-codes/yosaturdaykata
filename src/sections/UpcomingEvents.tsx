@@ -63,7 +63,7 @@ export default function UpcomingEvents() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">
             Upcoming <span className="text-primary">Events</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto">
             Get ready — we&apos;re bringing you all these amazing events!
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function UpcomingEvents() {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4">
-                  <div className="badge badge-primary text-black font-semibold">
+                  <div className="badge badge-primary font-semibold">
                     {event.price}
                   </div>
                 </div>
@@ -94,9 +94,7 @@ export default function UpcomingEvents() {
 
               <div className="card-body">
                 <h3 className="card-title text-lg font-bold">{event.name}</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  {event.description}
-                </p>
+                <p className="text-sm mb-4">{event.description}</p>
 
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-1">
@@ -104,11 +102,13 @@ export default function UpcomingEvents() {
                       {event.difficulty}
                     </span>
                   </div>
-                  <span className="text-xs text-gray-500">{event.date}</span>
+                  <span className="text-xs ">{event.date}</span>
                 </div>
 
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary btn-sm">Know More</button>
+                  <button className="btn btn-primary btn-sm w-full">
+                    Know More
+                  </button>
                 </div>
               </div>
             </div>

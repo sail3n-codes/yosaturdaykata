@@ -73,7 +73,7 @@ export default function FeaturedDestinations() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">
             Featured <span className="text-primary">Destinations</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto">
             Discover Nepal&apos;s most trending destinations, carefully curated
             to inspire your next adventure and create memories that will last a
             lifetime.
@@ -98,7 +98,7 @@ export default function FeaturedDestinations() {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4">
-                  <div className="badge badge-primary text-black font-semibold">
+                  <div className="badge badge-primary font-semibold">
                     {destination.price}
                   </div>
                 </div>
@@ -108,9 +108,7 @@ export default function FeaturedDestinations() {
                 <h3 className="card-title text-lg font-bold">
                   {destination.name}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  {destination.description}
-                </p>
+                <p className="text-sm mb-4">{destination.description}</p>
 
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-1">
@@ -122,7 +120,7 @@ export default function FeaturedDestinations() {
                           className={`mask mask-star-2 ${
                             i < Math.floor(destination.rating)
                               ? "bg-orange-400"
-                              : "bg-gray-300"
+                              : "bg-white"
                           }`}
                           disabled
                         />

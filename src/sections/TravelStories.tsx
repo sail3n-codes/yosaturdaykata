@@ -49,7 +49,7 @@ export default function TravelStories() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">
             Latest Travel <span className="text-primary">Stories</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl max-w-3xl mx-auto">
             Get inspired by real travel experiences, expert tips, and insider
             secrets from fellow adventurers around the globe.
           </p>
@@ -73,7 +73,7 @@ export default function TravelStories() {
                   className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute top-4 left-4">
-                  <div className="badge badge-secondary text-white font-semibold">
+                  <div className="badge badge-secondary font-semibold">
                     {post.category}
                   </div>
                 </div>
@@ -83,17 +83,15 @@ export default function TravelStories() {
                 <h3 className="card-title text-lg font-bold line-clamp-2 hover:text-primary transition-colors">
                   <Link href={`/blog/${post.id}`}>{post.title}</Link>
                 </h3>
-                <p className="text-gray-600 text-sm line-clamp-3 mb-4">
-                  {post.excerpt}
-                </p>
+                <p className="text-sm line-clamp-3 mb-4">{post.excerpt}</p>
 
-                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                <div className="flex items-center justify-between text-sm mb-4">
                   <span>By {post.author}</span>
                   <span>{post.readTime}</span>
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{post.date}</span>
+                  <span className="text-xs">{post.date}</span>
                   <Link
                     href={`/blog/${post.id}`}
                     className="btn btn-primary btn-sm"
