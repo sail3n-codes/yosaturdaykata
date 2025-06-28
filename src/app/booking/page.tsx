@@ -1,6 +1,8 @@
-import { Phone, Mail, MapPin, Clock, Send, HelpCircle } from "lucide-react";
+import config from "@/config";
+import { Phone, Mail, Send, HelpCircle } from "lucide-react";
 
 export default function BookingPage() {
+  const { bookingFormId } = config;
   return (
     <div className="min-h-screen bg-base-200">
       {/* Hero Section */}
@@ -21,12 +23,14 @@ export default function BookingPage() {
           <div className="lg:col-span-4">
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
-                <h2 className="card-title text-2xl mb-4">Fill up this form</h2>
+                <h2 className="card-title text-2xl mb-4">
+                  Confirm your seat by filling up this form
+                </h2>
 
                 {/* Google Form Embed */}
-                <div className="w-full h-[1600px]">
+                <div className="w-full h-[980px]">
                   <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfEw1azXBydMYCBsNLO-Ub2A__CUfWd5MTiiEHJXEf6GXqr0g/viewform?embedded=true"
+                    src={`https://docs.google.com/forms/d/e/${bookingFormId}/viewform?embedded=true&hl=en`}
                     width="100%"
                     height="100%"
                     className="rounded-lg"

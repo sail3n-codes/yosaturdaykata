@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jolly.variable}`}>
-      <body className="antialiased min-h-screen flex flex-col">
+      <body className="antialiased h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

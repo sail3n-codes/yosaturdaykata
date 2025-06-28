@@ -12,7 +12,7 @@ export default function CallToActionSection() {
           getaway today and create memories that will last a lifetime.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="btn btn-secondary btn-lg text-lg px-8">
+          <button className="btn btn-primary btn-lg text-lg px-8">
             Plan My Trip
           </button>
           <button className="btn btn-outline btn-lg text-lg px-8">
