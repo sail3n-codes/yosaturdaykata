@@ -67,7 +67,7 @@ export default function ParallaxHero() {
             <button className="btn btn-primary btn-lg text-lg px-8">
               Start Exploring
             </button>
-            <button className="btn btn-outline btn-lg text-lg px-8 text-white border-white hover:bg-white hover:text-neutral">
+            <button className="btn btn-outline btn-lg text-lg px-8">
               Watch Stories
             </button>
           </div>

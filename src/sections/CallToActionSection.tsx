@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CallToActionSection() {
   return (
-    <section className="py-20 bg-neutral text-white">
+    <section className="py-20 bg-base-100 text-white">
       <div className="max-w-4xl mx-auto text-center px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation hover:text-primary">
           Ready for Your Next Adventure?
@@ -15,7 +15,7 @@ export default function CallToActionSection() {
           <button className="btn btn-secondary btn-lg text-lg px-8">
             Plan My Trip
           </button>
-          <button className="btn btn-outline btn-lg text-lg px-8 text-white border-white hover:bg-white hover:text-primary">
+          <button className="btn btn-outline btn-lg text-lg px-8">
             Get Inspired
           </button>
         </div>

@@ -57,7 +57,7 @@ const events = [
 export default function UpcomingEvents() {
   const { imagekitUrl } = config;
   return (
-    <section className="py-20 bg-gradient-to-br from-base-100 to-base-200 relative overflow-hidden">
+    <section className="py-20 bg-base-200 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 scale-up-animation">

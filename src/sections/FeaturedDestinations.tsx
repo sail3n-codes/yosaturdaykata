@@ -56,7 +56,7 @@ export default function FeaturedDestinations() {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-base-100 to-base-200 relative overflow-hidden">
+    <section className="py-20 bg-base-200 relative overflow-hidden">
       {/* Parallax Background Elements */}
       <div
         className="absolute top-0 left-0 w-full h-full opacity-10"

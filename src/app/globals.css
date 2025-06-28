@@ -6,9 +6,9 @@
   default: false;
   prefersdark: true;
   color-scheme: "dark";
-  --color-base-100: oklch(30.857% 0.023 264.149);
-  --color-base-200: oklch(28.036% 0.019 264.182);
-  --color-base-300: oklch(26.346% 0.018 262.177);
+  --color-base-100: #302f3d;
+  --color-base-200: #22212c;
+  --color-base-300: var(--color-slate-900);
   --color-base-content: var(--color-slate-300);
   --color-primary: #ffea00;
   --color-primary-content: #18182f;
@@ -30,7 +30,7 @@
   --color-error: #e83d30;
   --color-error-content: #ffffff;
   --error-color-focus: #ff6b6b;
-  --color-default: var
+  --color-default: var(--color-slate-300);
   --radius-selector: 1rem;
   --radius-field: 0.5rem;
   --radius-box: 1rem;
@@ -117,6 +117,16 @@ h6 {
 p {
   font-weight: 400;
   font-size: 14px;
+}
+
+.btn-outline {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn-outline:hover {
+  color: var(--color-neutral);
+  background-color: var(--color-white);
 }
 
 .scale-up-animation:hover {
