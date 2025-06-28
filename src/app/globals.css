@@ -174,3 +174,11 @@ p {
 .home-swiper {
   height: 100%;
 }
+
+.search-input {
+  outline: none;
+}
+
+.search-input:focus-within {
+  --input-color: var(--color-primary);
+}

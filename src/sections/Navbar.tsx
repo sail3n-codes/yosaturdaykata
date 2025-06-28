@@ -1,4 +1,5 @@
 "use client";
+import SearchButton from "@/components/SearchButton";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -103,7 +104,8 @@ export default function Navbar() {
         {/* <div className="btn btn-sm" onClick={toggleTheme}>
           {theme === "light" ? "☀️" : "🌙"}
         </div> */}
-        <a className="btn btn-primary">Login</a>
+        <SearchButton />
+        <a className="btn btn-primary">Book Now</a>
       </div>
     </header>
   );

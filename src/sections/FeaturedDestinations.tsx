@@ -136,7 +136,9 @@ export default function FeaturedDestinations() {
                 </div>
 
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary btn-sm">Explore</button>
+                  <button className="btn btn-primary btn-sm w-full">
+                    Explore
+                  </button>
                 </div>
               </div>
             </div>

@@ -27,7 +27,7 @@ export default function ParallaxHero() {
         <Swiper
           modules={[Autoplay]}
           className="home-swiper"
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 3000 }}
           loop={true}
           speed={1000}
         >
@@ -60,8 +60,8 @@ export default function ParallaxHero() {
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Explore breathtaking destinations, create unforgettable memories,
-            and let wanderlust guide your journey to extraordinary places around
-            the world.
+            and let us guide your journey to extraordinary places around the
+            world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn btn-primary btn-lg text-lg px-8">
