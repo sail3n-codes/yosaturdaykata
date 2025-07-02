@@ -1,18 +1,21 @@
 import React from "react";
 
-export default function DestinationDetail({
+export default async function DestinationDetail({
   params,
 }: {
-  params: { destination: string };
+  params: Promise<{ destination: string }>;
 }) {
-  return <div>page :{params.destination}</div>;
+  const destination = await params;
+  console.log(destination);
+
+  return <div></div>;
 }
 
 export async function generateStaticParams() {
   return [
-    { destination: "paris" },
-    { destination: "tokyo" },
-    { destination: "kathmandu" },
+    // { destination: "paris" },
+    // { destination: "tokyo" },
+    // { destination: "kathmandu" },
     // Add all your expected static paths here
   ];
 }
