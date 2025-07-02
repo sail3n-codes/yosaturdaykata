@@ -1,10 +1,10 @@
 import React from "react";
 
-interface Props {
+export default function DestinationDetail({
+  params,
+}: {
   params: { destination: string };
-}
-
-export default function DestinationDetail({ params }: Props) {
+}) {
   return <div>page :{params.destination}</div>;
 }
 
