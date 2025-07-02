@@ -2,21 +2,23 @@
 import SearchButton from "@/components/SearchButton";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
-  // const [theme, setTheme] = useState<"light" | "dark">("dark");
+  const [theme] = useState<"light" | "dark">("dark");
 
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     const stored = localStorage.getItem("theme") as "light" | "dark";
-  //     if (stored) {
-  //       setTheme(stored);
-  //       const themeToSet = stored === "light" ? "lemonade" : "dim";
-  //       document.documentElement.setAttribute("data-theme", themeToSet);
-  //     }
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // const stored = localStorage.getItem("theme") as "light" | "dark";
+      // if (stored) {
+      //   setTheme(stored);
+      //   const themeToSet = stored === "light" ? "lemonade" : "dim";
+      //   document.documentElement.setAttribute("data-theme", themeToSet);
+      // }
+      const themeToSet = theme === "light" ? "lemonade" : "dim";
+      document.documentElement.setAttribute("data-theme", themeToSet);
+    }
+  }, [theme]);
 
   // const toggleTheme = () => {
   //   const newTheme = theme === "light" ? "dark" : "light";
