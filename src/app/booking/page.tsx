@@ -133,7 +133,7 @@ export default function BookingPage() {
                     />
                   </svg>
                   <span className="text-xs">
-                    We'll respond within 24 hours!
+                    We&apos;ll respond within 24 hours!
                   </span>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default function BookingPage() {
                     </div>
                     <div className="collapse-content">
                       <p className="text-sm text-base-content/70">
-                        Sorry, we don't provide any insurance.
+                        Sorry, we don&apos;t provide any insurance.
                       </p>
                     </div>
                   </div>

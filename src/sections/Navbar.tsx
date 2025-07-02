@@ -2,10 +2,10 @@
 import SearchButton from "@/components/SearchButton";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Navbar() {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
+  // const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   // useEffect(() => {
   //   if (typeof window !== "undefined") {
@@ -18,13 +18,13 @@ export default function Navbar() {
   //   }
   // }, []);
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    const themeToSet = newTheme === "light" ? "lemonade" : "dim";
-    document.documentElement.setAttribute("data-theme", themeToSet);
-    localStorage.setItem("theme", newTheme);
-  };
+  // const toggleTheme = () => {
+  //   const newTheme = theme === "light" ? "dark" : "light";
+  //   setTheme(newTheme);
+  //   const themeToSet = newTheme === "light" ? "lemonade" : "dim";
+  //   document.documentElement.setAttribute("data-theme", themeToSet);
+  //   localStorage.setItem("theme", newTheme);
+  // };
 
   return (
     <header className="navbar bg-base-300/90 fixed top-0 z-50 shadow-lg">
