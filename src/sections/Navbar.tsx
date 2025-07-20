@@ -1,5 +1,5 @@
 "use client";
-import SearchButton from "@/components/SearchButton";
+import SearchButton from "@/components/SearchBar";
 import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -172,7 +172,6 @@ export default function Navbar() {
           {/* <div className="btn btn-sm" onClick={toggleTheme}>
           {theme === "light" ? "☀️" : "🌙"}
         </div> */}
-          <SearchButton />
           <Link href="/booking" className="btn btn-primary">
             Book Now
           </Link>
