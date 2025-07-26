@@ -149,6 +149,7 @@ export const BLOGS = [
     author: "Adventure Seeker",
     date: "July 20, 2025",
     readTime: "10 min read",
+    category: "Journey",
     description:
       "Dreaming of Everest? This post covers everything you need to know for your iconic trek to Everest Base Camp, from preparation to breathtaking views.",
   },
@@ -159,6 +160,7 @@ export const BLOGS = [
     author: "Mountain Wanderer",
     date: "July 18, 2025",
     readTime: "12 min read",
+    category: "Short Trek",
     description:
       "Explore the stunning variety of the Annapurna Circuit, a trek that takes you through lush forests, arid landscapes, and vibrant local communities.",
   },
@@ -169,6 +171,7 @@ export const BLOGS = [
     author: "Himalayan Explorer",
     date: "July 15, 2025",
     readTime: "8 min read",
+    category: "Trekking",
     description:
       "Discover the serene beauty and rich Tamang culture of Langtang Valley, an accessible yet deeply rewarding trekking experience.",
   },
@@ -179,6 +182,7 @@ export const BLOGS = [
     author: "Sunrise Chaser",
     date: "July 12, 2025",
     readTime: "6 min read",
+    category: "Sunrise",
     description:
       "A short and sweet trek offering unparalleled sunrise panoramas of the Annapurna and Dhaulagiri ranges – perfect for all ages.",
   },
@@ -189,6 +193,7 @@ export const BLOGS = [
     author: "Remote Trails",
     date: "July 10, 2025",
     readTime: "11 min read",
+    category: "Adventure",
     description:
       "For those seeking solitude and raw Himalayan beauty, the Manaslu Circuit offers a challenging yet incredibly rewarding journey around the eighth highest peak.",
   },
@@ -199,6 +204,7 @@ export const BLOGS = [
     author: "New Horizon",
     date: "July 8, 2025",
     readTime: "7 min read",
+    category: "Escape",
     description:
       "Uncover the rising popularity of the Mardi Himal trek, known for its stunning close-up perspectives of Machhapuchhre (Fishtail) and the Annapurna range.",
   },
@@ -209,6 +215,7 @@ export const BLOGS = [
     author: "Cultural Voyager",
     date: "July 5, 2025",
     readTime: "9 min read",
+    category: "Sight Seeing",
     description:
       "Step back in time with a trek to Upper Mustang, an ancient kingdom showcasing unique Tibetan Buddhist culture and dramatic desert landscapes.",
   },
@@ -219,6 +226,7 @@ export const BLOGS = [
     author: "City Escapist",
     date: "July 3, 2025",
     readTime: "6 min read",
+    category: "Hiking",
     description:
       "Discover the charm of rural Nepal and panoramic mountain views on a leisurely trek around the rim of the Kathmandu Valley.",
   },
@@ -229,6 +237,7 @@ export const BLOGS = [
     author: "Nature Lover",
     date: "July 1, 2025",
     readTime: "5 min read",
+    category: "Day Out",
     description:
       "Escape the city bustle with a refreshing day hike in Shivapuri Nagarjun National Park, offering lush forests and stunning valley vistas.",
   },
@@ -239,6 +248,29 @@ export const BLOGS = [
     author: "The Pathfinder",
     date: "June 28, 2025",
     readTime: "8 min read",
+    category: "Stories",
+    description:
+      "Looking for an authentic, less-traveled experience? This post highlights some of Nepal's best off-the-beaten-path treks.",
+  },
+  {
+    id: 11,
+    image: "ama-yangri.jpg",
+    title: "Beyond the Crowds: Nepal's Hidden Trekking Gems",
+    author: "The Pathfinder",
+    date: "June 28, 2025",
+    readTime: "8 min read",
+    category: "Stories",
+    description:
+      "Looking for an authentic, less-traveled experience? This post highlights some of Nepal's best off-the-beaten-path treks.",
+  },
+  {
+    id: 12,
+    image: "ama-yangri.jpg",
+    title: "Beyond the Crowds: Nepal's Hidden Trekking Gems",
+    author: "The Pathfinder",
+    date: "June 28, 2025",
+    readTime: "8 min read",
+    category: "Stories",
     description:
       "Looking for an authentic, less-traveled experience? This post highlights some of Nepal's best off-the-beaten-path treks.",
   },
