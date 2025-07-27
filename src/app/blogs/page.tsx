@@ -22,7 +22,7 @@ export default function BlogListPage() {
             {/* Featured Popular Post */}
             <div className="lg:col-span-2">
               <Link
-                href={`/blog/${popularFeatured.id}`}
+                href={`/blogs/${popularFeatured.id}`}
                 className="block group h-full"
               >
                 <div className="relative h-full bg-base-100 rounded-lg overflow-hidden">
@@ -63,7 +63,7 @@ export default function BlogListPage() {
               {popularPosts.map((post) => (
                 <Link
                   key={post.id}
-                  href={`/blog/${post.id}`}
+                  href={`/blogs/${post.id}`}
                   className="block group"
                 >
                   <div className="flex gap-4 p-4 rounded-lg bg-base-100 transition-colors">

@@ -81,7 +81,7 @@ export default function TravelStories() {
 
               <div className="card-body">
                 <h3 className="card-title text-lg font-bold line-clamp-2 hover:text-primary transition-colors">
-                  <Link href={`/blog/${post.id}`}>{post.title}</Link>
+                  <Link href={`/blogs/${post.id}`}>{post.title}</Link>
                 </h3>
                 <p className="text-sm line-clamp-3 mb-4">{post.excerpt}</p>
 
@@ -93,7 +93,7 @@ export default function TravelStories() {
                 <div className="flex items-center justify-between">
                   <span className="text-xs">{post.date}</span>
                   <Link
-                    href={`/blog/${post.id}`}
+                    href={`/blogs/${post.id}`}
                     className="btn btn-primary btn-sm"
                   >
                     Read More
