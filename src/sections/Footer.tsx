@@ -107,7 +107,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="footer-links">
+                <Link href="/about-us" className="footer-links">
                   About Us
                 </Link>
               </li>
