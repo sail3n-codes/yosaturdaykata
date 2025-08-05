@@ -1,7 +1,7 @@
 import AboutSection from "@/sections/AboutSection";
 import CallToActionSection from "@/sections/CallToActionSection";
 import FeaturedDestinations from "@/sections/FeaturedDestinations";
-import ParallaxHero from "@/sections/ParallexHero";
+import HomeEvents from "@/sections/HomeEvents";
 import TravelStats from "@/sections/TravelStats";
 import TravelStories from "@/sections/TravelStories";
 import UpcomingEvents from "@/sections/UpcomingEvents";
@@ -9,7 +9,7 @@ import UpcomingEvents from "@/sections/UpcomingEvents";
 export default function Home() {
   return (
     <>
-      <ParallaxHero />
+      <HomeEvents />
       <UpcomingEvents />
       <AboutSection />
       <FeaturedDestinations />
