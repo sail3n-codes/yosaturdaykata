@@ -6,7 +6,7 @@ import config from "@/config";
 export default function HomeEvents() {
   const { imagekitUrl } = config;
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="py-12 max-h-[80vh]">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

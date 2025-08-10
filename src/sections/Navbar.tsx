@@ -28,7 +28,7 @@ export default function Navbar() {
   // };
 
   return (
-    <div className="sticky top-0 flex flex-col z-50 w-full">
+    <div className="top-0 flex flex-col z-50 w-full">
       <header className="navbar bg-base-300 z-50 shadow-lg">
         <div className="navbar-start">
           <div className="dropdown">
