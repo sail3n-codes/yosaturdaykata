@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Heart, Star, MapPin, Clock, Users } from "lucide-react";
-import { BLOGS, EVENTS } from "@/sample";
-import config from "@/config";
-import Pagination from "@/components/Pagination";
-import SearchBar from "@/components/SearchBar";
+import { BLOGS, EVENTS } from "@/src/sample";
+import config from "@/src/config";
+import Pagination from "@/src/components/Pagination";
+import SearchBar from "@/src/components/SearchBar";
 
 export default function Events() {
   const { imagekitUrl } = config;

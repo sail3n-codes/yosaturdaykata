@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Jolly_Lodger } from "next/font/google";
-import Navbar from "@/sections/Navbar";
-import Footer from "@/sections/Footer";
+import Navbar from "@/src/sections/Navbar";
+import Footer from "@/src/sections/Footer";
 import "./globals.css";
 import "swiper/css/bundle";
 

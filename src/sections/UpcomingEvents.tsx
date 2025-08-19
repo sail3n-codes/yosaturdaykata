@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import config from "@/config";
+import config from "@/src/config";
 
 const events = [
   {

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Calendar, Clock, MapPin } from "lucide-react";
-import config from "@/config";
+import config from "@/src/config";
 
 export default function HomeEvents() {
   const { imagekitUrl } = config;

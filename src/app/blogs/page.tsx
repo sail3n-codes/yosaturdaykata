@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, User, Users } from "lucide-react";
-import config from "@/config";
-import { BLOGS } from "@/sample";
-import Pagination from "@/components/Pagination";
+import config from "@/src/config";
+import { BLOGS } from "@/src/sample";
+import Pagination from "@/src/components/Pagination";
 
 export default function BlogListPage() {
   const { imagekitUrl } = config;

@@ -7,7 +7,7 @@ import {
   Shield,
   Headphones,
 } from "lucide-react";
-import config from "@/config";
+import config from "@/src/config";
 
 export default function AboutPage() {
   const { imagekitUrl } = config;

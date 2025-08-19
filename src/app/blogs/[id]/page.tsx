@@ -12,8 +12,8 @@ import {
   Eye,
   Users,
 } from "lucide-react";
-import config from "@/config";
-import { BLOGS, EVENTS } from "@/sample";
+import config from "@/src/config";
+import { BLOGS, EVENTS } from "@/src/sample";
 
 export default function BlogDetailPage() {
   const { imagekitUrl } = config;

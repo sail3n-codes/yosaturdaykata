@@ -1,4 +1,4 @@
-import config from "@/config";
+import config from "@/src/config";
 import { Phone, Mail, Send, HelpCircle } from "lucide-react";
 
 export default function BookingPage() {
